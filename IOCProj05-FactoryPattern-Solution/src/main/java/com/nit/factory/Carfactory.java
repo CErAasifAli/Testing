@@ -15,6 +15,9 @@ public class Carfactory {
 			return new BudgetCar(regNo);
 		else if(type.equalsIgnoreCase("luxury"))
 			return new LuxuryCar(regNo);
+		else if(type.equalsIgnoreCase("Superluxury"))
+			return new LuxuryCar(regNo);
+
 		else
 			throw new IllegalArgumentException("Invalid car Type");
 	}
